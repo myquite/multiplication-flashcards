@@ -1,22 +1,22 @@
 "use strict";
 
-document.addEventListener("DOMContentLoaded", function (e) {
+document.addEventListener("DOMContentLoaded", function () {
 
-  var button = document.querySelector(".button");
-  var card = document.querySelector(".card");
-  var multiplicand = document.querySelector(".num1");
-  var multiplier = document.querySelector(".num2");
-  var message = document.querySelector(".message");
-  var answerInput = document.querySelector("#answer");
-  var score = document.querySelector(".score");
-  var right = document.querySelector(".right");
-  var wrong = document.querySelector(".wrong");
+  const button = document.querySelector(".button");
+  const card = document.querySelector(".card");
+  const multiplicand = document.querySelector(".num1");
+  const multiplier = document.querySelector(".num2");
+  const message = document.querySelector(".message");
+  const answerInput = document.querySelector("#answer");
+  const score = document.querySelector(".score");
+  const right = document.querySelector(".right");
+  const wrong = document.querySelector(".wrong");
 
-  var correctAnswer = undefined;
+  let correctAnswer = undefined;
 
   // randomly generate a number between 1 and 12
   function assignValues(element) {
-    var num = Math.floor(Math.random() * 12) + 1;
+    let num = Math.floor(Math.random() * 12) + 1;
     element.textContent = num;
     return num;
   }
@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function (e) {
   answerInput.addEventListener("change", function (e) {
     e.preventDefault();
 
-    var answer = parseInt(answerInput.value);
+    let answer = parseInt(answerInput.value);
     if (answer === correctAnswer) {
       // displays correct
       displayAlert("Correct!", "rgba(83, 177, 80, 1)", 500);
