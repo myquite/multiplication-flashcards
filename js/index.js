@@ -1,7 +1,6 @@
 "use strict";
 
 document.addEventListener("DOMContentLoaded", function () {
-
   const button = document.querySelector(".button");
   const card = document.querySelector(".card");
   const multiplicand = document.querySelector(".num1");
@@ -27,7 +26,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // assigned and multiply the multiplicand and the multiplier saving the product in correctAnswer
   function createNewFactors() {
-    correctAnswer = multiply(assignValues(multiplicand), assignValues(multiplier));
+    correctAnswer = multiply(
+      assignValues(multiplicand),
+      assignValues(multiplier)
+    );
   }
 
   // starts the game and creates the first card

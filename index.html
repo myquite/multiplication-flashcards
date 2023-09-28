@@ -1,40 +1,62 @@
 <!DOCTYPE html>
-<html >
-<head>
-  <meta charset="UTF-8">
-  <title>Multiplication Flashcards</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  
-      <link rel="stylesheet" href="css/style.css">
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Multiplication Flashcards</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  
-</head>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-<body>
-  <div class="score">
-  <p><span class="wrong">0</span><span class="right">0</span></p>
-</div>
+  <body>
+    <header>
+      <h1>Flashcards X</h1>
+      <select name="factors" id="factors">
+        <option value="0">0</option>
+        <option value="1">1s</option>
+        <option value="2">2s</option>
+        <option value="3">3s</option>
+        <option value="4">4s</option>
+        <option value="5">5s</option>
+        <option value="6">6s</option>
+        <option value="7">7s</option>
+        <option value="8">8s</option>
+        <option value="9">9s</option>
+        <option value="10">10s</option>
+        <option value="11">11s</option>
+        <option value="12">12s</option>
+      </select>
+    </header>
 
-<div class="button">Get Started</div>
+    <div class="container">
+      <div class="score">
+        <p><span class="wrong">0</span><span class="right">0</span></p>
+      </div>
 
-<div class="card">
-  <div class="highlight1"></div>
-  <div class="highlight2"></div>
-  <h1 class="num num1"></h1>
-  <h1 class="num num2"></h1>
-  <div class="line-group">
-    <p>&times;</p>
-    <hr />
-  </div>
-  
-    <input autofocus required type="number" name="answer" id="answer" title="answer"/>
-  
-</div>
+      <div class="button">Get Started</div>
 
-<div class="message"></div>
-  
+      <div class="card">
+        <div class="highlight1"></div>
+        <div class="highlight2"></div>
+        <h1 class="num num1"></h1>
+        <h1 class="num num2"></h1>
+        <div class="line-group">
+          <p>&times;</p>
+          <hr />
+        </div>
+
+        <input
+          autofocus
+          required
+          type="number"
+          name="answer"
+          id="answer"
+          title="answer"
+        />
+      </div>
+
+      <div class="message"></div>
+    </div>
     <script src="js/index.js"></script>
-
-</body>
+  </body>
 </html>
