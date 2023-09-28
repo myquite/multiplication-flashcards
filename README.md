@@ -1,4 +1,6 @@
 # Multiplication Flashcards
 
-## Problem Statement: 
-Create multiplication flashcard app. The app will assign values between 1 through 12 to a card. The user can provide an answer and then receive instant feedback on whether or not they are correct. If they are incorrect the alert will also show the correct answer. The same card should not be shown again, unless the user answered incorrectly. The user will continue answering cards until every card has been answered correctly. Then a final score will be shown which displays time to complete and the number of cards answered correctly on the first try. A summary of cards answered incorrectly will also be presented.
+A simple flashcard app for practicing multiplication tables. HTML, CSS, and plain Javascript.
+
+## Screenshot:
+![Project Screenshot](https://github.com/myquite/multiplication-flashcards/blob/master/multiplication-flashcards.png?raw=true)
